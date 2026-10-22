@@ -50,14 +50,60 @@ def api(path, accept=None):
 
 
 def fetch_log(repo, run_id):
-    """Tải log job đầu tiên của run (text)."""
+    """Tải log của run (endpoint run-level trả về ZIP chứa log từng step) -> text gộp."""
     h = dict(HEADERS)
+    if TOKEN:
+        h["Authorization"] = f"token {TOKEN}"
     req = urllib.request.Request(f"{API}/repos/{repo}/actions/runs/{run_id}/logs", headers=h)
     try:
-        with urllib.request.urlopen(req, timeout=60) as r:
-            return r.read().decode("utf-8", "replace")
+        with urllib.request.urlopen(req, timeout=90) as r:
+            raw = r.read()
     except Exception:
         return ""
+    try:
+        import io
+        import zipfile
+        z = zipfile.ZipFile(io.BytesIO(raw))
+        parts = []
+        for n in z.namelist():
+            if n.endswith(".txt") and not n.startswith("run-bot/system"):
+                try:
+                    parts.append(z.read(n).decode("utf-8", "replace"))
+                except Exception:
+                    pass
+        return "\n".join(parts)
+    except Exception:
+        return raw.decode("utf-8", "replace") if raw else ""
+
+
+def fetch_artifact_logs(repo, run_id):
+    """Hybrid workflows ghi log bot vào file -> nằm trong artifact bot-logs*."""
+    arts = api(f"/repos/{repo}/actions/runs/{run_id}/artifacts")
+    if not arts:
+        return ""
+    h = dict(HEADERS)
+    if TOKEN:
+        h["Authorization"] = f"token {TOKEN}"
+    chunks = []
+    for a in arts.get("artifacts", []):
+        if not a.get("name", "").startswith("bot-logs"):
+            continue
+        url = a.get("archive_download_url")
+        if not url:
+            continue
+        try:
+            req = urllib.request.Request(url, headers=h)
+            with urllib.request.urlopen(req, timeout=90) as r:
+                raw = r.read()
+            import io
+            import zipfile
+            z = zipfile.ZipFile(io.BytesIO(raw))
+            for n in z.namelist():
+                if n.endswith(".log"):
+                    chunks.append(z.read(n).decode("utf-8", "replace"))
+        except Exception:
+            continue
+    return "\n".join(chunks)
 
 
 def parse_log(text):
@@ -100,15 +146,12 @@ def collect():
         by_wf = {}
         for r in items:
             wf = r.get("name", "?")
-            cur = by_wf.get(wf)
-            if cur is None:
-                by_wf[wf] = r
-            else:
-                # ưu tiên in_progress
-                if r.get("status") == "in_progress" and cur.get("status") != "in_progress":
-                    by_wf[wf] = r
+            slot = by_wf.setdefault(wf, {"latest": r, "completed": None})
+            if r.get("status") == "completed" and slot["completed"] is None:
+                slot["completed"] = r
         repo_info = {"total": len(items), "in_progress": 0, "workflows": {}}
-        for wf, r in sorted(by_wf.items()):
+        for wf, slot in sorted(by_wf.items()):
+            r = slot["latest"]
             status = r.get("status")
             if status == "in_progress":
                 repo_info["in_progress"] += 1
@@ -121,15 +164,15 @@ def collect():
                 "updated_at": r.get("updated_at"),
                 "url": r.get("html_url"),
             }
-            # lấy log của run completed gần nhất (bỏ qua run quá cũ > 36h)
-            if status == "completed" and r.get("updated_at"):
-                try:
-                    age = (datetime.now(timezone.utc) -
-                           datetime.fromisoformat(r["updated_at"].replace("Z", "+00:00"))).total_seconds()
-                except Exception:
-                    age = 1e9
-                if age < 36 * 3600:
-                    entry["stats"] = parse_log(fetch_log(repo, r["id"]))
+            # số liệu: ưu tiên run completed gần nhất (kể cả khi run hiện tại đang chạy)
+            src = slot["completed"] or (r if status == "completed" else None)
+            if src:
+                text = fetch_log(repo, src["id"])
+                if not text.strip():
+                    text = fetch_artifact_logs(repo, src["id"])
+                if text.strip():
+                    entry["stats"] = parse_log(text)
+                    entry["stats_run_id"] = src["id"]
             repo_info["workflows"][wf] = entry
         out["repos"][repo] = repo_info
     return out
