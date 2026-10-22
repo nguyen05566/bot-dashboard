@@ -61,5 +61,12 @@
   "claims": 0,
   "transfers": 0,
   "errors": 61
+ },
+ {
+  "t": "2026-10-22T23:41:32.151376+00:00",
+  "runs": 12,
+  "claims": 42864,
+  "transfers": 1090,
+  "errors": 70
  }
 ]
