@@ -65,7 +65,7 @@
   <span class="spacer"></span>
   <span id="gen" class="sub">—</span>
   <button onclick="load()">Tải lại</button>
-  <button onclick="triggerCollect()">Thu thập ngay (workflow)</button>
+  <button onclick="triggerCollect()">Chạy thu thập (Actions)</button>
 </header>
 
 <main>
@@ -178,16 +178,9 @@ async function loadHist(){
   }catch(e){}
 }
 
-async function triggerCollect(){
-  const btn = event.target; btn.disabled = true; btn.textContent = 'Đang gửi...';
-  try{
-    await fetch('https://api.github.com/repos/nguyen05566/bot-dashboard/actions/workflows/pages.yml/dispatches', {
-      method:'POST',
-      headers:{ 'Content-Type':'application/json', 'Authorization':'Bearer ' + (window.GH_PAT||'') }
-    });
-    btn.textContent = 'Đã gửi (xem Actions)';
-  }catch(e){ btn.textContent = 'Lỗi: ' + e.message; }
-  setTimeout(()=>{ btn.disabled=false; btn.textContent='Thu thập ngay (workflow)'; }, 4000);
+function triggerCollect(){
+  // Không nhúng token vào trang web (rò rỉ). Mở Actions để chạy workflow thủ công.
+  window.open('https://github.com/nguyen05566/bot-dashboard/actions/workflows/pages.yml', '_blank');
 }
 
 let pyReady = null;
