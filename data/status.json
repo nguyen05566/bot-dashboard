@@ -1,4 +1,429 @@
 {
- "generated_at": "2026-01-01T00:00:00+00:00",
- "repos": {}
+ "generated_at": "2026-10-22T12:37:55.542156+00:00",
+ "repos": {
+  "nguyen05566/jieqi-core": {
+   "total": 30,
+   "in_progress": 22,
+   "workflows": {
+    "c-gomoku-vh": {
+     "run_id": 39742657383,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:44:52Z",
+     "updated_at": "2026-10-22T07:44:56Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39742657383"
+    },
+    "c-maubinh_xapxam": {
+     "run_id": 39742666998,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:44:57Z",
+     "updated_at": "2026-10-22T07:45:00Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39742666998"
+    },
+    "c-mystery-xiangqi": {
+     "run_id": 39742676358,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:45:01Z",
+     "updated_at": "2026-10-22T07:45:06Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39742676358"
+    },
+    "c-phom_tala": {
+     "run_id": 39742688212,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:45:07Z",
+     "updated_at": "2026-10-22T07:45:11Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39742688212"
+    },
+    "c-sam_loc_vh": {
+     "run_id": 39742697794,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:45:11Z",
+     "updated_at": "2026-10-22T07:45:15Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39742697794"
+    },
+    "c-tienlen_miennam": {
+     "run_id": 39742708688,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:45:16Z",
+     "updated_at": "2026-10-22T07:45:21Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39742708688"
+    },
+    "d-chinese-chess-vh": {
+     "run_id": 39742719918,
+     "status": "completed",
+     "conclusion": "cancelled",
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:45:21Z",
+     "updated_at": "2026-10-22T12:02:12Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39742719918",
+     "stats": {
+      "claims_ok": 0,
+      "transfers": 0,
+      "idle_breaks": 0,
+      "errors": 0,
+      "dest_ids": [],
+      "idle_seconds": [],
+      "summary": "",
+      "last_activity": ""
+     }
+    },
+    "d-gomoku-vh": {
+     "run_id": 39742730175,
+     "status": "completed",
+     "conclusion": "cancelled",
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:45:26Z",
+     "updated_at": "2026-10-22T12:02:09Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39742730175",
+     "stats": {
+      "claims_ok": 0,
+      "transfers": 0,
+      "idle_breaks": 0,
+      "errors": 0,
+      "dest_ids": [],
+      "idle_seconds": [],
+      "summary": "",
+      "last_activity": ""
+     }
+    },
+    "d-maubinh_xapxam": {
+     "run_id": 39742740133,
+     "status": "completed",
+     "conclusion": "cancelled",
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:45:30Z",
+     "updated_at": "2026-10-22T12:02:27Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39742740133",
+     "stats": {
+      "claims_ok": 0,
+      "transfers": 0,
+      "idle_breaks": 0,
+      "errors": 0,
+      "dest_ids": [],
+      "idle_seconds": [],
+      "summary": "",
+      "last_activity": ""
+     }
+    },
+    "d-mystery-xiangqi": {
+     "run_id": 39742750467,
+     "status": "completed",
+     "conclusion": "cancelled",
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:45:35Z",
+     "updated_at": "2026-10-22T12:02:24Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39742750467",
+     "stats": {
+      "claims_ok": 0,
+      "transfers": 0,
+      "idle_breaks": 0,
+      "errors": 0,
+      "dest_ids": [],
+      "idle_seconds": [],
+      "summary": "",
+      "last_activity": ""
+     }
+    },
+    "d-phom_tala": {
+     "run_id": 39742760438,
+     "status": "completed",
+     "conclusion": "cancelled",
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:45:40Z",
+     "updated_at": "2026-10-22T12:02:22Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39742760438",
+     "stats": {
+      "claims_ok": 0,
+      "transfers": 0,
+      "idle_breaks": 0,
+      "errors": 0,
+      "dest_ids": [],
+      "idle_seconds": [],
+      "summary": "",
+      "last_activity": ""
+     }
+    },
+    "d-sam_loc_vh": {
+     "run_id": 39742770123,
+     "status": "completed",
+     "conclusion": "cancelled",
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:45:45Z",
+     "updated_at": "2026-10-22T12:02:31Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39742770123",
+     "stats": {
+      "claims_ok": 0,
+      "transfers": 0,
+      "idle_breaks": 0,
+      "errors": 0,
+      "dest_ids": [],
+      "idle_seconds": [],
+      "summary": "",
+      "last_activity": ""
+     }
+    },
+    "d-tienlen_miennam": {
+     "run_id": 39742780026,
+     "status": "completed",
+     "conclusion": "cancelled",
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:45:50Z",
+     "updated_at": "2026-10-22T12:02:40Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39742780026",
+     "stats": {
+      "claims_ok": 0,
+      "transfers": 0,
+      "idle_breaks": 0,
+      "errors": 0,
+      "dest_ids": [],
+      "idle_seconds": [],
+      "summary": "",
+      "last_activity": ""
+     }
+    },
+    "e-chinese-chess-vh": {
+     "run_id": 39743042345,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:48:01Z",
+     "updated_at": "2026-10-22T07:48:05Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743042345"
+    },
+    "e-gomoku-vh": {
+     "run_id": 39743053426,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:48:07Z",
+     "updated_at": "2026-10-22T07:48:10Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743053426"
+    },
+    "e-maubinh_xapxam": {
+     "run_id": 39743064253,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:48:12Z",
+     "updated_at": "2026-10-22T07:48:16Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743064253"
+    },
+    "e-mystery-xiangqi": {
+     "run_id": 39743074533,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:48:17Z",
+     "updated_at": "2026-10-22T07:48:21Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743074533"
+    },
+    "e-phom_tala": {
+     "run_id": 39743084578,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:48:22Z",
+     "updated_at": "2026-10-22T07:48:26Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743084578"
+    },
+    "e-sam_loc_vh": {
+     "run_id": 39743095005,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:48:27Z",
+     "updated_at": "2026-10-22T07:48:31Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743095005"
+    },
+    "e-tienlen_miennam": {
+     "run_id": 39743105052,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:48:31Z",
+     "updated_at": "2026-10-22T07:48:35Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743105052"
+    },
+    "f-chinese-chess-vh": {
+     "run_id": 39743114241,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:48:36Z",
+     "updated_at": "2026-10-22T07:48:41Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743114241"
+    },
+    "f-gomoku-vh": {
+     "run_id": 39743124524,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:48:41Z",
+     "updated_at": "2026-10-22T07:48:45Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743124524"
+    },
+    "f-maubinh_xapxam": {
+     "run_id": 39743133921,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:48:46Z",
+     "updated_at": "2026-10-22T07:48:50Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743133921"
+    },
+    "f-mystery-xiangqi": {
+     "run_id": 39743144082,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:48:51Z",
+     "updated_at": "2026-10-22T07:48:55Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743144082"
+    },
+    "f-phom_tala": {
+     "run_id": 39743154024,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:48:56Z",
+     "updated_at": "2026-10-22T07:48:59Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743154024"
+    },
+    "f-sam_loc_vh": {
+     "run_id": 39743163848,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:49:01Z",
+     "updated_at": "2026-10-22T07:49:05Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743163848"
+    },
+    "f-tienlen_miennam": {
+     "run_id": 39743174683,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T07:49:06Z",
+     "updated_at": "2026-10-22T07:49:11Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39743174683"
+    },
+    "hybrid1": {
+     "run_id": 39746639246,
+     "status": "completed",
+     "conclusion": "cancelled",
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T08:17:28Z",
+     "updated_at": "2026-10-22T12:03:10Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39746639246",
+     "stats": {
+      "claims_ok": 0,
+      "transfers": 0,
+      "idle_breaks": 0,
+      "errors": 0,
+      "dest_ids": [],
+      "idle_seconds": [],
+      "summary": "",
+      "last_activity": ""
+     }
+    },
+    "hybrid2": {
+     "run_id": 39746652500,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T08:17:34Z",
+     "updated_at": "2026-10-22T08:18:13Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39746652500"
+    },
+    "hybrid4": {
+     "run_id": 39752924779,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T09:07:03Z",
+     "updated_at": "2026-10-22T09:07:08Z",
+     "url": "https://github.com/nguyen05566/jieqi-core/actions/runs/39752924779"
+    }
+   }
+  },
+  "nguyen05566/the-anh": {
+   "total": 4,
+   "in_progress": 1,
+   "workflows": {
+    "_input_probe": {
+     "run_id": 39709632037,
+     "status": "completed",
+     "conclusion": "success",
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T02:07:33Z",
+     "updated_at": "2026-10-22T02:07:40Z",
+     "url": "https://github.com/nguyen05566/the-anh/actions/runs/39709632037",
+     "stats": {
+      "claims_ok": 0,
+      "transfers": 0,
+      "idle_breaks": 0,
+      "errors": 0,
+      "dest_ids": [],
+      "idle_seconds": [],
+      "summary": "",
+      "last_activity": ""
+     }
+    },
+    "arena10k": {
+     "run_id": 39775617242,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "schedule",
+     "created_at": "2026-10-22T12:06:03Z",
+     "updated_at": "2026-10-22T12:06:06Z",
+     "url": "https://github.com/nguyen05566/the-anh/actions/runs/39775617242"
+    }
+   }
+  },
+  "nguyen05566/vht": {
+   "total": 30,
+   "in_progress": 1,
+   "workflows": {
+    "arena10k": {
+     "run_id": 39775571814,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "schedule",
+     "created_at": "2026-10-22T12:05:42Z",
+     "updated_at": "2026-10-22T12:06:29Z",
+     "url": "https://github.com/nguyen05566/vht/actions/runs/39775571814"
+    },
+    "arena11k": {
+     "run_id": 39733870976,
+     "status": "completed",
+     "conclusion": "cancelled",
+     "event": "workflow_dispatch",
+     "created_at": "2026-10-22T06:25:45Z",
+     "updated_at": "2026-10-22T12:21:15Z",
+     "url": "https://github.com/nguyen05566/vht/actions/runs/39733870976",
+     "stats": {
+      "claims_ok": 0,
+      "transfers": 0,
+      "idle_breaks": 0,
+      "errors": 0,
+      "dest_ids": [],
+      "idle_seconds": [],
+      "summary": "",
+      "last_activity": ""
+     }
+    }
+   }
+  }
+ }
 }
