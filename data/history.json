@@ -89,5 +89,12 @@
   "claims": 0,
   "transfers": 0,
   "errors": 0
+ },
+ {
+  "t": "2026-10-23T17:30:23.996464+00:00",
+  "runs": 3,
+  "claims": 585,
+  "transfers": 174,
+  "errors": 538
  }
 ]
