@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-24T01:57:04.912513+00:00",
+ "generated_at": "2026-10-24T07:04:45.515402+00:00",
  "repos": {
   "nguyen05566/jieqi-core": {
    "total": 30,
@@ -579,7 +579,7 @@
    }
   },
   "nguyen05566/the-anh": {
-   "total": 10,
+   "total": 11,
    "in_progress": 1,
    "workflows": {
     "_input_probe": {
@@ -603,13 +603,13 @@
      "stats_run_id": 39709632037
     },
     "arena10k": {
-     "run_id": 40027359300,
+     "run_id": 40063773745,
      "status": "in_progress",
      "conclusion": null,
      "event": "schedule",
-     "created_at": "2026-10-23T21:31:10Z",
-     "updated_at": "2026-10-23T21:31:55Z",
-     "url": "https://github.com/nguyen05566/the-anh/actions/runs/40027359300",
+     "created_at": "2026-10-24T04:48:09Z",
+     "updated_at": "2026-10-24T04:48:13Z",
+     "url": "https://github.com/nguyen05566/the-anh/actions/runs/40063773745",
      "stats": {
       "claims_ok": 0,
       "transfers": 0,
@@ -618,9 +618,9 @@
       "dest_ids": [],
       "idle_seconds": [],
       "summary": "",
-      "last_activity": "2026-10-23T21:31:50.0730983Z"
+      "last_activity": "2026-10-24T03:27:36.9296221Z"
      },
-     "stats_run_id": 39993881101
+     "stats_run_id": 40027359300
     }
    }
   },
@@ -629,33 +629,13 @@
    "in_progress": 2,
    "workflows": {
     "arena10k": {
-     "run_id": 40027314967,
+     "run_id": 40063756035,
      "status": "in_progress",
      "conclusion": null,
      "event": "schedule",
-     "created_at": "2026-10-23T21:30:48Z",
-     "updated_at": "2026-10-23T21:31:45Z",
-     "url": "https://github.com/nguyen05566/vht/actions/runs/40027314967",
-     "stats": {
-      "claims_ok": 0,
-      "transfers": 0,
-      "idle_breaks": 0,
-      "errors": 15,
-      "dest_ids": [],
-      "idle_seconds": [],
-      "summary": "",
-      "last_activity": "2026-10-23T21:31:39.2944937Z"
-     },
-     "stats_run_id": 39993841599
-    },
-    "arena11k": {
-     "run_id": 40026585155,
-     "status": "in_progress",
-     "conclusion": null,
-     "event": "schedule",
-     "created_at": "2026-10-23T21:24:53Z",
-     "updated_at": "2026-10-23T21:25:47Z",
-     "url": "https://github.com/nguyen05566/vht/actions/runs/40026585155",
+     "created_at": "2026-10-24T04:47:53Z",
+     "updated_at": "2026-10-24T04:48:56Z",
+     "url": "https://github.com/nguyen05566/vht/actions/runs/40063756035",
      "stats": {
       "claims_ok": 0,
       "transfers": 0,
@@ -664,9 +644,29 @@
       "dest_ids": [],
       "idle_seconds": [],
       "summary": "",
-      "last_activity": "2026-10-23T21:25:42.2182103Z"
+      "last_activity": "2026-10-24T04:48:51.0026083Z"
      },
-     "stats_run_id": 39992515146
+     "stats_run_id": 40058440670
+    },
+    "arena11k": {
+     "run_id": 40063058582,
+     "status": "in_progress",
+     "conclusion": null,
+     "event": "schedule",
+     "created_at": "2026-10-24T04:37:13Z",
+     "updated_at": "2026-10-24T04:37:16Z",
+     "url": "https://github.com/nguyen05566/vht/actions/runs/40063058582",
+     "stats": {
+      "claims_ok": 0,
+      "transfers": 0,
+      "idle_breaks": 0,
+      "errors": 0,
+      "dest_ids": [],
+      "idle_seconds": [],
+      "summary": "",
+      "last_activity": "2026-10-24T03:21:09.9524003Z"
+     },
+     "stats_run_id": 40026585155
     }
    }
   }
